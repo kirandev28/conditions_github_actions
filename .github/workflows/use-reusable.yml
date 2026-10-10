@@ -75,7 +75,7 @@ jobs:
       #some-secret: ${{ secrets.some-secret}} 
   print-deploy-result:
     runs-on: ubuntu-latest
-    setps:
+    steps:
       - name: print deploy outputs
         run: echo "${{ needs.deploy.ouputs.result}"
   report:
