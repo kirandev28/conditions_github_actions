@@ -77,7 +77,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print deploy outputs
-        run: echo "${{ needs.deploy.ouputs.result}"
+        run: echo "${{ needs.deploy.ouputs.result}}"
   report:
     needs: [lint,deploy]
     if: failure()
