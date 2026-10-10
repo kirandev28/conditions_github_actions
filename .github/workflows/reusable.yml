@@ -1,6 +1,6 @@
 name: Reusable deploy
 on: 
-  workflow_call
+  workflow_call:
     inputs:
       artifact-name:
         description:  The name of the artifact
@@ -15,7 +15,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: ${{ inputs.artifact-name}}
-      - nameL List files
+      - name: List files
         runs: ls
       - name: Output Information
         run: echo "Delpoying & uploading"
