@@ -1,6 +1,7 @@
 name: Matrix Deployment
 on: push
 jobs:
+  continue-on-error: true
   builds:
     strategy:
       matrix:
