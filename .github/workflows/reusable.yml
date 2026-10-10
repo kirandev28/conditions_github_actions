@@ -16,6 +16,6 @@ jobs:
         with:
           name: ${{ inputs.artifact-name}}
       - name: List files
-        runs: ls
+        run: ls
       - name: Output Information
         run: echo "Delpoying & uploading"
